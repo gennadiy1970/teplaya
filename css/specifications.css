@@ -1,0 +1,52 @@
+.specification-wrapper {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 75%,
+    hsla(111, 100%, 36%, 0) 75%,
+    hsla(111, 100%, 36%, 0.75) 100%
+  );
+  width: 100%;
+  /* border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; */
+  padding: 0;
+  margin: 0;
+}
+.specification-wrapper .title {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+}
+.specification-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  max-width: 768px;
+  margin: auto;
+}
+.col-1 {
+  width: calc(100% / 12);
+  min-height: 100px;
+  flex-shrink: 3;
+}
+.col-2 {
+  width: calc(100% / 6);
+  min-height: 100px;
+  flex-shrink: 2;
+}
+
+.col-2[title="Модель"] {
+  font-size: 1.2rem;
+  color: var(--title-color);
+  font-weight: bold;
+  flex-shrink: 1;
+}
+@media screen and (min-width: 560px) {
+  .col-2[title="Модель"] {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .specification-wrapper .title {
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+}
